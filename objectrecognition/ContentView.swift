@@ -1,40 +1,38 @@
-//
-//  ContentView.swift
-//  objectrecognition
-//
-//  Created by Joel Vargas on 04/02/25.
-//
+
 
 import SwiftUI
-
+import PhotosUI
 
 struct ContentView: View {
-    
-    @State var tocado : Bool = false
-    
-    
-    
-    
+    @StateObject var imagePicker=ImagePicker()
     var body: some View {
-        VStack{
-            Button(action: {
-                self.tocado.toggle()
-                print("Escanear")
-            }) {
-                Text("Escanear")
+        NavigationStack {
+            VStack {
+                if let image=imagePicker.image{
+                    image
+                         .resizable()
+                         .scaledToFit()
+                    
+                }else{
+                    Text("Tap the menu bar button to select a photo.")
+                }
             }
-            
-            Button(action: {
-                self.tocado.toggle()
-                print("Importar")
-            }) {
-                Text("Importar")
+            .padding()
+            .navigationTitle("Single Picker")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    PhotosPicker(selection: $imagePicker.imageSelection){
+                        Image(systemName: "photo")
+                            .imageScale(.large)
+                    }
+                }
             }
         }
-        
     }
 }
 
-#Preview {
-    ContentView()
+struct SingleImagePickerView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
