@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5D65C42A2D6B73E500ACAF9C /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5D65C4292D6B73E500ACAF9C /* MobileNetV2.mlmodel */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5DB0FF482D52A8B000B89188 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D65C4292D6B73E500ACAF9C /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 		5DB0FF372D52A8AF00B89188 /* objectrecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objectrecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB0FF472D52A8B000B89188 /* objectrecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = objectrecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB0FF512D52A8B000B89188 /* objectrecognitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = objectrecognitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +84,7 @@
 				5DB0FF4A2D52A8B000B89188 /* objectrecognitionTests */,
 				5DB0FF542D52A8B000B89188 /* objectrecognitionUITests */,
 				5DB0FF382D52A8AF00B89188 /* Products */,
+				5D65C4292D6B73E500ACAF9C /* MobileNetV2.mlmodel */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D65C42A2D6B73E500ACAF9C /* MobileNetV2.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
